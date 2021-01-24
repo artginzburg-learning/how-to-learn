@@ -140,12 +140,16 @@ h1, h2, h3, h4, p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 1100px;
 }
-/* .table__cell_size_s {
- width: 200px;
-} */
+/* 4/ */
+.table__cell_size_s {
+  width: 200px;
+  margin-top: 80px;
+}
 .table__cell_size_m {
   width: 250px;
+  margin-top: 60px;
 }
 .section-title, .table__heading, .table__text {
   margin-bottom: 20px;
@@ -228,16 +232,6 @@ h1, h2, h3, h4, p {
   margin-bottom: 0;
 }
 
-/* Секция, блок digits */
-/* 3/ */
-.digits__table {
-  width: 1100px;
-}
-/* 4/ */
-.digits__cell {
-  margin-top: 60px;
-}
-
 /* Секция, блок feynman */
 .feynman {
   height: 790px;
@@ -266,6 +260,25 @@ h1, h2, h3, h4, p {
 .feynman__main-illustration {
   bottom: 0;
   left: 0;
+}
+
+/* Секция, блок kaufman */
+.kaufman {
+  overflow: hidden;
+}
+.kaufman__section-container {
+  margin: 90px 0;
+}
+/* 6/ */
+.kaufman__table-text::after {
+  content: '.';
+}
+/* 7/ */
+.kaufman__triangle {
+  height: 877px;
+  width: 877px;
+  top: 0;
+  right: -210px;
 }
 
 /* правильно записанный селектор элемента с модификатором вида ключ-значение */
