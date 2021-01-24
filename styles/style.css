@@ -94,6 +94,9 @@ h1, h2, h3, h4, p {
 .link {
   text-decoration: none;
 }
+.link:hover {
+  text-decoration: underline;
+}
 
 .link_arrowed::after {
   /* → or &rarr; */
