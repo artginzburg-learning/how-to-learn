@@ -1,22 +1,8 @@
 /* reset styles */
 h1, h2, h3, h4, p {
   margin: 0;
+  padding: 0;
   font-weight: normal;
-}
-/* body {
-  overflow: hidden;
-} */
-
-/* container */
-.page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* layering */
@@ -117,7 +103,19 @@ h1, h2, h3, h4, p {
   content: ' \2192';
 }
 
-/* content */
+/* container */
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* reusable classes */
 .logo {
   min-width: 183px;
   min-height: 32px;
@@ -125,84 +123,9 @@ h1, h2, h3, h4, p {
   position: absolute;
 }
 
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  /* выше установили ограничения для секции */
-  display: flex;
-}
-
-.logo_place_header {
-  background-image: url('../images/logo_place_header.svg');
-  top: 30px;
-  left: 64px;
-}
-/* .logo_place_footer {
-  background-image: url('../images/logo_place_footer.svg');
-} */
-
-.header__title {
-  height: fit-content;
-  max-width: 730px;
-  line-height: 96px;
-  font-size: 102px;
-  margin: auto 0;
-  margin-left: 64px;
-}
-
-.header__subtitle {
-  position: absolute;
-  width: 388px;
-  bottom: 30px;
-  left: 64px;
-}
-
-.header__main-illustration {
-  height: 608px;
-  width: 765px;
-  bottom: 0;
-  right: 0;
-}
-
-/* правильный пример записи селектора элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-  top: 64px;
-  right: 0;
-}
-
 .flex-centered {
   display: flex;
   justify-content: center;
-}
-
-.two-columns {
-  /* height: fit-content; */
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.two-columns__brief {
-  width: 175px;
-  display: flex;
-  flex-direction: column;
-}
-
-.two-columns__main-text {
-  width: 80%;
-  min-width: 784px;
-  display: flex;
-  flex-direction: column;
-}
-
-.two-columns__paragraph {
-  margin-bottom: 30px;
-}
-.two-columns__paragraph:last-of-type {
-  margin-bottom: 0;
 }
 
 .section-container {
@@ -213,6 +136,17 @@ h1, h2, h3, h4, p {
   margin: 0 auto;
   text-align: center;
 }
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* .table__cell_size_s {
+ width: 200px;
+} */
+.table__cell_size_m {
+  width: 250px;
+}
 .section-title, .table__heading, .table__text {
   margin-bottom: 20px;
 }
@@ -220,59 +154,129 @@ h1, h2, h3, h4, p {
   margin-bottom: 0;
 }
 
-/* .table__cell_size_s {
- width: 200px;
-} */
-.table__cell_size_m {
-  width: 250px;
+/* Шапка сайта, блок header */
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  /* выше установили ограничения для секции */
+  display: flex;
+}
+/* 1/ */
+.logo_place_header {
+  background-image: url('../images/logo_place_header.svg');
+  top: 30px;
+  left: 64px;
+}
+/* 2/ */
+.header__title {
+  height: fit-content;
+  max-width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  margin: auto 0;
+  margin-left: 64px;
+}
+/* 3/ */
+.header__subtitle {
+  position: absolute;
+  width: 388px;
+  bottom: 30px;
+  left: 64px;
+}
+/* 5/ */
+.header__main-illustration {
+  height: 608px;
+  width: 765px;
+  bottom: 0;
+  right: 0;
+}
+/* 6/ */
+/* правильный пример записи селектора элемента */
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+  top: 64px;
+  right: 0;
 }
 
-.table {
+/* Секция, блок description */
+/* 1/ */
+.two-columns {
+  width: 80%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
+/* 2/ */
+.two-columns__brief {
+  width: 175px;
+  display: flex;
+  flex-direction: column;
+}
+/* 3/ */
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  flex-direction: column;
+}
+/* 4-6/ */
+.two-columns__paragraph {
+  margin-bottom: 30px;
+}
+.two-columns__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Секция, блок digits */
+/* 3/ */
 .digits__table {
   width: 1100px;
 }
+/* 4/ */
 .digits__cell {
   margin-top: 60px;
 }
 
+/* Секция, блок feynman */
 .feynman {
   height: 790px;
 }
-
 .feynman__title, .feynman__subtitle {
   margin: 0 auto;
   text-align: center;
 }
-
+/* 1/ */
 .feynman__title {
   width: 648px;
   font-size: 120px;
   padding-top: 100px;
 }
-
+/* 2/ */
 .feynman__subtitle {
   padding-top: 70px;
 }
-
-.feynman__main-illustration {
-  bottom: 0;
-  left: 0;
-}
-
+/* 3 */
 .feynman__link {
   position: absolute;
   top: 50%;
   right: 48px;
 }
+/* 4 */
+.feynman__main-illustration {
+  bottom: 0;
+  left: 0;
+}
 
-/* и элемента с модификатором вида ключ-значение */
+/* правильно записанный селектор элемента с модификатором вида ключ-значение */
 /* .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+} */
+
+/* Подвал сайта, блок footer */
+/* .logo_place_footer {
+  background-image: url('../images/logo_place_footer.svg');
 } */
