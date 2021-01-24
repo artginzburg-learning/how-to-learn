@@ -120,7 +120,6 @@ h1, h2, h3, h4, p {
   min-width: 183px;
   min-height: 32px;
   background-repeat: no-repeat;
-  position: absolute;
 }
 
 .flex-centered {
@@ -169,6 +168,7 @@ h1, h2, h3, h4, p {
 /* 1/ */
 .logo_place_header {
   background-image: url('../images/logo_place_header.svg');
+  position: absolute;
   top: 30px;
   left: 64px;
 }
@@ -291,6 +291,63 @@ h1, h2, h3, h4, p {
 } */
 
 /* Подвал сайта, блок footer */
-/* .logo_place_footer {
+.footer {
+  min-height: 350px;
+}
+/* 1/ */
+.footer__columns {
+  width: 90%;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+/* 2/ */
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+/* 5/ */
+.logo_place_footer {
   background-image: url('../images/logo_place_footer.svg');
-} */
+  height: 35px;
+}
+/* 6/ */
+.footer__author {
+  margin: 18px 0;
+}
+.footer__author::before {
+  content: '\00a9\ ';
+}
+/* 7/ */
+.footer__column-heading {
+  margin-bottom: 20px;
+}
+/* 8/ */
+.footer__column-links {
+  margin-bottom: 16px;
+}
+/* 10/ */
+.footer__column-link {
+  display: flex;
+  align-items: center;
+}
+/* 9/ */
+.footer__social-icon {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer__social-icon_of_fb {
+  background-image: url('../images/facebook_color_white.svg');
+}
+.footer__social-icon_of_vk {
+  background-image: url('../images/vk_color_white.svg');
+}
+.footer__social-icon_of_inst {
+  background-image: url('../images/instagram_color_white.svg');
+}
