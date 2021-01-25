@@ -179,7 +179,7 @@ h1, h2, h3, h4, p {
   max-width: 730px;
   line-height: 96px;
   font-size: 102px;
-  margin: auto 0;
+  align-self: center;
   margin-left: 64px;
 }
 /* 3/ */
@@ -236,7 +236,8 @@ h1, h2, h3, h4, p {
 
 /* Секция, блок feynman */
 .feynman {
-  height: 790px;
+  min-height: 790px;
+  padding-top: 100px;
 }
 .feynman__title, .feynman__subtitle {
   margin: 0 auto;
@@ -246,11 +247,10 @@ h1, h2, h3, h4, p {
 .feynman__title {
   width: 648px;
   font-size: 120px;
-  padding-top: 100px;
 }
 /* 2/ */
 .feynman__subtitle {
-  padding-top: 70px;
+  margin-top: 70px;
 }
 /* 3 */
 .feynman__link {
@@ -345,6 +345,7 @@ h1, h2, h3, h4, p {
   width: 16px;
   display: inline-block;
   margin-right: 10px;
+  background-repeat: no-repeat;
 }
 .footer__social-icon_of_fb {
   background-image: url('../images/facebook_color_white.svg');
