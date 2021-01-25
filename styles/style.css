@@ -23,46 +23,36 @@
 }
 
 /* text heights */
-.text_height_xs {
-  /* remove */
+.header__subtitle, .footer__author {
   line-height: 25px;
 }
-.text_height_s {
-  /* remove */
+.footer__column-heading, .footer__column-link {
   line-height: 30px;
 }
-.text_height_m {
-  /* remove */
+.two-columns__main-text, .section-subtitle {
   line-height: 34px;
 }
-.text_height_l {
-  /* remove */
+.feynman__subtitle, .feynman__link {
   line-height: 51px;
 }
-.text_height_xl {
-  /* remove */
+.section-title, .table__heading, .feynman__title {
   line-height: 1.15;
 }
-.text_height_xxl {
-  /* remove */
+.two-columns__brief, .table__text {
   line-height: 1.2;
 }
 
 /* text sizes */
-.text_size_s {
-  /* remove */
+.header__subtitle, .table__text, .footer__author, .footer__column-heading, .footer__column-link {
   font-size: 18px;
 }
-.text_size_m {
-  /* remove */
+.two-columns__main-text, .section-subtitle, .table__heading {
   font-size: 24px;
 }
-.text_size_l {
-  /* remove */
+.feynman__subtitle, .feynman__link {
   font-size: 36px;
 }
-.text_size_xl {
-  /* remove */
+.section-title {
   font-size: 60px;
 }
 
