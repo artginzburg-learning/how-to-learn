@@ -169,8 +169,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1100px;
+  list-style-type: none;
 }
 /* 4/ */
+.table_cell {
+  margin: 0;
+  padding: 0;
+}
 .table__cell_size_s {
   /* remove */
   width: 200px;
@@ -301,10 +306,6 @@
 .kaufman__section-container {
   /* remove */
   margin: 90px 0;
-}
-/* 6/ */
-.kaufman__table-text::after {
-  content: '.';
 }
 /* 7/ */
 .kaufman__triangle {
