@@ -11,30 +11,37 @@
 
 /* layering */
 .background {
+  /* remove */
   position: relative;
   z-index: 0;
 }
 .figure {
+  /* remove */
   position: absolute;
   z-index: 1;
 }
 .illustration {
+  /* remove */
   position: absolute;
   z-index: 2;
 }
 .text {
+  /* remove */
   position: relative;
   z-index: 3;
 }
 
 /* colors */
 .background_theme_light {
+  /* remove */
   background-color: white;
 }
 .background_theme_light_dimmed {
+  /* remove */
   background-color: #f2f2f2;
 }
 .background_theme_dark {
+  /* remove */
   background-color: #1f1f1f;
 }
 
@@ -54,55 +61,70 @@
 
 /* text heights */
 .text_height_xs {
+  /* remove */
   line-height: 25px;
 }
 .text_height_s {
+  /* remove */
   line-height: 30px;
 }
 .text_height_m {
+  /* remove */
   line-height: 34px;
 }
 .text_height_l {
+  /* remove */
   line-height: 51px;
 }
 .text_height_xl {
+  /* remove */
   line-height: 1.15;
 }
 .text_height_xxl {
+  /* remove */
   line-height: 1.2;
 }
 
 /* text sizes */
 .text_size_s {
+  /* remove */
   font-size: 18px;
 }
 .text_size_m {
+  /* remove */
   font-size: 24px;
 }
 .text_size_l {
+  /* remove */
   font-size: 36px;
 }
 .text_size_xl {
+  /* remove */
   font-size: 60px;
 }
 
 /* text weights */
 .text_normal {
+  /* remove */
   font-weight: normal;
 }
 .text_bold {
+  /* remove */
   font-weight: bold;
 }
 
 /* links */
 .link {
+  /* remove */
   text-decoration: none;
 }
 .link:hover {
+  /* rewrite for .link replacement */
   text-decoration: underline;
 }
 
 .link_arrowed::after {
+  /* remove */
   /* → or &rarr; */
   content: ' \2192';
 }
@@ -128,11 +150,13 @@
 }
 
 .flex-centered {
+  /* remove */
   display: flex;
   justify-content: center;
 }
 
 .section-container {
+  /* remove */
   margin: 100px 0;
 }
 .section-title, .section-subtitle {
@@ -148,10 +172,12 @@
 }
 /* 4/ */
 .table__cell_size_s {
+  /* remove */
   width: 200px;
   margin-top: 80px;
 }
 .table__cell_size_m {
+  /* remove */
   width: 250px;
   margin-top: 60px;
 }
@@ -273,6 +299,7 @@
   overflow: hidden;
 }
 .kaufman__section-container {
+  /* remove */
   margin: 90px 0;
 }
 /* 6/ */
