@@ -1,5 +1,9 @@
-/* reset styles */
-h1, h2, h3, p {
+/* reset */
+.header__title, /* Вместо h1 */
+.two-columns__brief, .section-title, .feynman__title, .footer__column-heading, /* Вместо h2 */
+.table__heading, /* Вместо h3 */
+.header__subtitle, .two-columns__paragraph, .section-subtitle, .table__text, .feynman__subtitle, .footer__author /* Вместо p */
+{
   margin: 0;
   padding: 0;
   font-weight: normal;
