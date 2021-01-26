@@ -40,7 +40,7 @@
 }
 
 /* text sizes */
-.header__subtitle, .table__text, .footer__author, .footer__column-heading, .footer__column-link {
+.header__subtitle, .table__text, .footer__author, .footer__column-heading, .footer__column-link, .two-columns__brief {
   font-size: 18px;
 }
 .two-columns__main-text, .section-subtitle, .table__heading {
