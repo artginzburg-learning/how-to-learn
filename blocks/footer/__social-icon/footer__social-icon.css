@@ -1,0 +1,8 @@
+/* 9/ */
+.footer__social-icon {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+}

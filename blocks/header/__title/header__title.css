@@ -1,0 +1,12 @@
+/* 2/ */
+.header__title {
+  margin: 0;
+  padding: 0;
+  
+  height: fit-content;
+  max-width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  align-self: center;
+  margin-left: 64px;
+}

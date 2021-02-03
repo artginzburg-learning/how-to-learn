@@ -1,34 +1,26 @@
 /* reset */
-.header__title, /* Вместо h1 */
-.two-columns__brief, .section-title, .feynman__title, .footer__column-heading, /* Вместо h2 */
+.two-columns__brief, .section-title, .feynman__title, /* Вместо h2 */
 .table__heading, /* Вместо h3 */
-.header__subtitle, .two-columns__paragraph, .section-subtitle, .table__text, .feynman__subtitle, .footer__author /* Вместо p */
+.two-columns__paragraph, .section-subtitle, .table__text, .feynman__subtitle /* Вместо p */
 {
   margin: 0;
   padding: 0;
 }
 
 /* colors */
-.header, .feynman {
+.feynman {
   background-color: #f2f2f2;
 }
-.kaufman, .footer {
+.kaufman {
   background-color: #1f1f1f;
 }
 
-.header__link,
 .two-columns__brief,
 .feynman__link {
   color: #2f80ed;
 }
 
 /* text heights */
-.header__subtitle, .footer__author {
-  line-height: 25px;
-}
-.footer__column-heading, .footer__column-link {
-  line-height: 30px;
-}
 .two-columns__main-text, .section-subtitle {
   line-height: 34px;
 }
@@ -40,7 +32,7 @@
 }
 
 /* text sizes */
-.header__subtitle, .table__text, .footer__author, .footer__column-heading, .footer__column-link, .two-columns__brief {
+.table__text, .two-columns__brief {
   font-size: 18px;
 }
 .two-columns__main-text, .section-subtitle, .table__heading {
@@ -55,46 +47,23 @@
 }
 
 /* links */
-.header__link,
-.feynman__link,
-.footer__column-link {
+.feynman__link {
   text-decoration: none;
 }
-.header__link:hover,
-.feynman__link:hover,
-.footer__column-link:hover {
+.feynman__link:hover {
   text-decoration: underline;
 }
 
-.header__link::after,
 .feynman__link::after {
   /* → or &rarr; */
   content: ' \2192';
 }
 
-/* container */
-.page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-
 /* reusable classes */
-.logo {
-  min-width: 183px;
-  min-height: 32px;
-  background-repeat: no-repeat;
-}
 
 .description,
 .digits,
-.kaufman,
-.footer {
+.kaufman {
   display: flex;
   justify-content: center;
 }
@@ -132,61 +101,6 @@
 }
 .table__text:last-child {
   margin-bottom: 0;
-}
-
-/* Шапка сайта, блок header */
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  position: relative;
-  /* выше установили ограничения для секции */
-  display: flex;
-  z-index: 0;
-  overflow: hidden;
-}
-/* 1/ */
-.logo_place_header {
-  background-image: url('../images/logo_place_header.svg');
-  position: absolute;
-  top: 30px;
-  left: 64px;
-}
-/* 2/ */
-.header__title {
-  height: fit-content;
-  max-width: 730px;
-  line-height: 96px;
-  font-size: 102px;
-  align-self: center;
-  margin-left: 64px;
-}
-/* 3/ */
-.header__subtitle {
-  position: absolute;
-  width: 388px;
-  bottom: 30px;
-  left: 64px;
-}
-/* 5/ */
-.header__main-illustration {
-  height: 608px;
-  width: 765px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-}
-/* 6/ */
-/* правильный пример записи селектора элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-  background-color: #2f80ed;
-  position: absolute;
-  top: 64px;
-  right: 0;
-  z-index: -2;
 }
 
 /* Секция, блок description */
@@ -285,72 +199,4 @@
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
-}
-
-/* Подвал сайта, блок footer */
-.footer {
-  min-height: 350px;
-}
-/* 1/ */
-.footer__columns {
-  color: white;
-  width: 90%;
-  margin-top: 60px;
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: space-between;
-}
-/* 2/ */
-.footer__column_content_copyright {
-  flex-basis: 711px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-/* 5/ */
-.logo_place_footer {
-  background-image: url('../images/logo_place_footer.svg');
-  height: 35px;
-}
-/* 6/ */
-.footer__author {
-  margin: 18px 0;
-}
-.footer__author::before {
-  content: '\00a9\ ';
-}
-/* 7/ */
-.footer__column-heading {
-  margin-bottom: 20px;
-}
-/* 8/ */
-.footer__column-links {
-  margin-bottom: 16px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-/* 10/ */
-.footer__column-link {
-  display: flex;
-  align-items: center;
-  color: white;
-}
-/* 9/ */
-.footer__social-icon {
-  height: 16px;
-  width: 16px;
-  display: inline-block;
-  margin-right: 10px;
-  background-repeat: no-repeat;
-}
-.footer__social-icon_of_fb {
-  background-image: url('../images/facebook_color_white.svg');
-}
-.footer__social-icon_of_vk {
-  background-image: url('../images/vk_color_white.svg');
-}
-.footer__social-icon_of_inst {
-  background-image: url('../images/instagram_color_white.svg');
 }
