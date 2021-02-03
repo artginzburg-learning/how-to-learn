@@ -1,52 +1,33 @@
-/* reset */
-.section-title, /* Вместо h2 */
-.table__heading, /* Вместо h3 */
-.section-subtitle, .table__text /* Вместо p */
-{
-  margin: 0;
-  padding: 0;
-}
-
-/* colors */
-.kaufman {
-  background-color: #1f1f1f;
-}
-
-/* text heights */
-.section-subtitle {
-  line-height: 34px;
-}
-.section-title, .table__heading {
-  line-height: 1.15;
-}
-.table__text {
-  line-height: 1.2;
-}
-
-/* text sizes */
-.table__text {
-  font-size: 18px;
-}
-.section-subtitle, .table__heading {
-  font-size: 24px;
-}
 .section-title {
+  margin: 0 auto 20px auto;
+  width: 60%;
+  padding: 0;
+
+  text-align: center;
+
+  line-height: 1.15;
   font-size: 60px;
 }
-
-/* reusable classes */
-
-.digits,
-.kaufman {
-  display: flex;
-  justify-content: center;
+.section-title_theme_dark {
+  color: white;
 }
 
-.section-title, .section-subtitle {
+.section-subtitle {
+  margin: 0;
+  padding: 0;
+
+  line-height: 34px;
+
+  font-size: 24px;
+
   width: 60%;
   margin: 0 auto;
   text-align: center;
 }
+.section-subtitle_theme_dark {
+  color: white;
+}
+
 .table {
   margin: 0;
   padding: 0;
@@ -67,18 +48,39 @@
   margin-right: 0;
   margin-top: 80px;
 }
-.section-title_theme_dark, .section-subtitle_theme_dark, .table__heading_theme_dark, .table__text_theme_dark {
+.table__heading {
+  margin: 0;
+  padding: 0;
+
+  line-height: 1.15;
+  font-size: 24px;
+
+  margin-bottom: 20px;
+}
+.table__heading_theme_dark {
   color: white;
 }
-.section-title, .table__heading, .table__text {
+.table__text {
+  margin: 0;
+  padding: 0;
+
+  line-height: 1.2;
+  font-size: 18px;
+
   margin-bottom: 20px;
 }
 .table__text:last-child {
   margin-bottom: 0;
 }
+.table__text_theme_dark {
+  color: white;
+}
 
 /* Секция, блок digits */
 .digits {
+  display: flex;
+  justify-content: center;
+
   padding: 100px 0;
   flex-direction: column;
   align-items: center;
@@ -86,12 +88,17 @@
 
 /* Секция, блок kaufman */
 .kaufman {
+  display: flex;
+  justify-content: center;
+
   padding: 90px 0;
   position: relative;
   z-index: 0;
   overflow: hidden;
   flex-direction: column;
   align-items: center;
+
+  background-color: #1f1f1f;
 }
 /* 7/ */
 .kaufman__triangle {
