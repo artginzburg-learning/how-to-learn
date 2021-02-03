@@ -1,7 +1,7 @@
 /* reset */
-.two-columns__brief, .section-title, .feynman__title, /* Вместо h2 */
+.section-title, .feynman__title, /* Вместо h2 */
 .table__heading, /* Вместо h3 */
-.two-columns__paragraph, .section-subtitle, .table__text, .feynman__subtitle /* Вместо p */
+.section-subtitle, .table__text, .feynman__subtitle /* Вместо p */
 {
   margin: 0;
   padding: 0;
@@ -15,27 +15,26 @@
   background-color: #1f1f1f;
 }
 
-.two-columns__brief,
 .feynman__link {
   color: #2f80ed;
 }
 
 /* text heights */
-.two-columns__main-text, .section-subtitle {
+.section-subtitle {
   line-height: 34px;
 }
 .section-title, .table__heading, .feynman__title {
   line-height: 1.15;
 }
-.two-columns__brief, .table__text {
+.table__text {
   line-height: 1.2;
 }
 
 /* text sizes */
-.table__text, .two-columns__brief {
+.table__text {
   font-size: 18px;
 }
-.two-columns__main-text, .section-subtitle, .table__heading {
+.section-subtitle, .table__heading {
   font-size: 24px;
 }
 .feynman__subtitle, .feynman__link {
@@ -61,7 +60,6 @@
 
 /* reusable classes */
 
-.description,
 .digits,
 .kaufman {
   display: flex;
@@ -101,41 +99,6 @@
 }
 .table__text:last-child {
   margin-bottom: 0;
-}
-
-/* Секция, блок description */
-/* 1/ */
-.two-columns {
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 100px;
-  margin-bottom: 0;
-}
-/* 2/ */
-.two-columns__brief {
-  width: 175px;
-  display: flex;
-  flex-direction: column;
-  font-weight: normal;
-}
-/* 3/ */
-.two-columns__main-text {
-  width: 80%;
-  min-width: 784px;
-  display: flex;
-  flex-direction: column;
-}
-/* 4-6/ */
-.two-columns__paragraph {
-  margin-bottom: 30px;
-}
-.two-columns__paragraph:last-of-type {
-  margin-bottom: 0;
-}
-/* 7/ */
-.two-columns__span-accent {
-  font-weight: bold;
 }
 
 /* Секция, блок digits */
