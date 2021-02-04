@@ -10,6 +10,8 @@
   text-decoration: none;
 
   color: #2f80ed;
+
+  transition: opacity .3s ease;
 }
 
 .feynman__link::after {
@@ -18,5 +20,5 @@
 }
 
 .feynman__link:hover {
-  text-decoration: underline;
+  opacity: .6;
 }

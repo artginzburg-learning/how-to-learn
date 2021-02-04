@@ -3,3 +3,11 @@
   min-height: 32px;
   background-repeat: no-repeat;
 }
+
+a.logo {
+  transition: opacity .3s ease;
+}
+
+a.logo:hover {
+  opacity: .6;
+}
