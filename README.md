@@ -1,5 +1,19 @@
-# Links
+# Научиться учиться
+Проектная работа о современных и эффективных подходах к обучению
 
+## Описание
+Языки: HTML + CSS
+Методология: [BEM](https://bem.info) (оформление классификации CSS и HTML, файловая структура — Nested)
+
+## Технологии
+- [API YouTube](https://developers.google.com/youtube/v3)
+- Анимации CSS
+- Создание сеток через `flex` и `grid`
+
+### To-do
+- [ ] Вендорные префиксы
+
+### Links
 > Numbers below correspond to sprint number
 
 - Briefs
