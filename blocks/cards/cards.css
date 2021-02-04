@@ -1,0 +1,26 @@
+.cards {
+  margin: 0;
+  width: 920px;
+  padding: 0;
+
+  list-style-type: none;
+
+  display: grid;
+
+  /* Column gap is explicitely defined in brief */
+  column-gap: 100px;
+
+  /* Sort of works, but: */
+  /* 1. Places items in wrong order */
+  /* 2. The number of rows is explicitly defined */
+  /* grid-auto-flow: column;
+  grid-template-rows: repeat(2, auto); */
+
+  /* Works, but the width is fixed to 240px  */
+  /* that's not what I need */
+  /* grid-template-columns: repeat(auto-fit, 240px); */
+
+  /* Works, but the number of columns is explicitly defined: 3 */
+  /* that's not what I need */
+  grid-template-columns: repeat(3, auto);
+}
