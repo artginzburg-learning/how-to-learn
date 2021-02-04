@@ -1,6 +1,9 @@
 /* Container */
 @import url(../blocks/page/page.css);
 
+/* Animations */
+@import url(../blocks/rotation/rotation.css);
+
 /* Multiple-usage classes */
 @import url(../blocks/logo/logo.css);
   @import url(../blocks/logo/_place/logo_place_header.css);
