@@ -16,11 +16,10 @@
   /* grid-auto-flow: column;
   grid-template-rows: repeat(2, auto); */
 
-  /* Works, but the width is fixed to 240px  */
-  /* that's not what I need */
-  /* grid-template-columns: repeat(auto-fit, 240px); */
+  /* Works, but idk if the width should be set explicitly */
+  grid-template-columns: repeat(auto-fit, 240px);
 
   /* Works, but the number of columns is explicitly defined: 3 */
   /* that's not what I need */
-  grid-template-columns: repeat(3, auto);
+  /* grid-template-columns: repeat(3, auto); */
 }
