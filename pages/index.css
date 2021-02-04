@@ -1,6 +1,3 @@
-/* Container */
-@import url(../blocks/page/page.css);
-
 /* Animations */
 @import url(../blocks/rotation/rotation.css);
 
@@ -29,6 +26,8 @@
     @import url(../blocks/table/__text/_theme/table__text_theme_dark.css);
 
 /* Single-usage classes */
+@import url(../blocks/page/page.css);
+
 @import url(../blocks/header/header.css);
   @import url(../blocks/header/__title/header__title.css);
   @import url(../blocks/header/__subtitle/header__subtitle.css);
@@ -73,6 +72,14 @@
 
 @import url(../blocks/kaufman/kaufman.css);
   @import url(../blocks/kaufman/__triangle/kaufman__triangle.css);
+
+@import url(../blocks/resources/resources.css);
+  @import url(../blocks/resources/__logo-zone/resources__logo-zone.css);
+  @import url(../blocks/resources/__logo/resources__logo.css);
+    @import url(../blocks/resources/__logo/_service/resources__logo_service_arzamas.css);
+    @import url(../blocks/resources/__logo/_service/resources__logo_service_n1.css);
+    @import url(../blocks/resources/__logo/_service/resources__logo_service_strelka.css);
+    @import url(../blocks/resources/__logo/_service/resources__logo_service_polka.css);
 
 @import url(../blocks/footer/footer.css);
   @import url(../blocks/footer/__columns/footer__columns.css);
