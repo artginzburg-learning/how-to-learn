@@ -4,10 +4,10 @@
   background-repeat: no-repeat;
 }
 
-a.logo {
+.logo {
   transition: opacity .3s ease;
 }
 
-a.logo:hover {
+.logo:hover {
   opacity: .6;
 }
