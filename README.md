@@ -1,5 +1,7 @@
-# Научиться учиться
+# [Научиться учиться](http://artginzburg.github.io/how-to-learn/)
 Проектная работа о современных и эффективных подходах к обучению
+
+<kbd>[Reviewed and accepted version of the project](https://github.com/artginzburg/how-to-learn/tree/review-final)</kbd>
 
 ## Описание
 Языки: HTML + CSS
