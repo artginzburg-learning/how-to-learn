@@ -1,7 +1,9 @@
 # [Научиться учиться](http://artginzburg.github.io/how-to-learn/)
-Проектная работа о современных и эффективных подходах к обучению
+> 1-я курсовая работа — о современных и эффективных подходах к обучению
 
-<kbd>[Reviewed and accepted version of the project](https://github.com/artginzburg/how-to-learn/tree/review-final)</kbd>
+Project 1: <kbd>[Reviewed and accepted version of the project](https://github.com/artginzburg/how-to-learn/tree/project-1_review-3-final)</kbd>
+
+Project 2: <kbd>[Reviewed and accepted version of the project](https://github.com/artginzburg/how-to-learn/tree/project-2_final)</kbd>
 
 ## Описание
 Языки: HTML + CSS
