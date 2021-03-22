@@ -31,3 +31,14 @@ Project 2: <kbd>[Reviewed and accepted version of the project](https://github.co
 - Sources
   1. https://github.com/yandex-praktikum/how-to-learn
   2. https://code.s3.yandex.net/web-developer/project-1/sprint-2-sources.zip
+
+<br>
+<br>
+
+<p align="center">
+  <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+  &nbsp;
+  <code><a href="https://github.com/artginzburg/yandex.praktikum-portfolio">Portfolio</a></code>
+  &nbsp;
+  <a href="https://github.com/artginzburg/mesto">Next --></a>
+</p>
