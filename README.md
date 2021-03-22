@@ -40,5 +40,5 @@ Project 2: <kbd>[Reviewed and accepted version of the project](https://github.co
   &nbsp;
   <code><a href="https://github.com/artginzburg/yandex.praktikum-portfolio">Portfolio</a></code>
   &nbsp;
-  <a href="https://github.com/artginzburg/mesto">Next --></a>
+  <a href="https://github.com/artginzburg/russian-travel">Next --></a>
 </p>
