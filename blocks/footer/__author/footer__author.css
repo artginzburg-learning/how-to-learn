@@ -4,6 +4,8 @@
   padding: 0;
   line-height: 25px;
   font-size: 18px;
+  color: #fff;
+  text-decoration: none;
 }
 .footer__author::before {
   /* © or &copy; */
